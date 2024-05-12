@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("resources/img_3.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FormContainer{
+  width: 65%;
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  padding: 20px 60px 40px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  animation: slideFromRight forwards ;
+  animation-duration: 1.5s;
+  animation-delay: -1s;
+  text-align: center;
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.landingheader{
+  color: palegoldenrod;
+  padding-top: 5vh;
+}
+.landingmessage{
+  color: greenyellow;
+  padding-top: 9.4vh;
+  padding-left: 9.4vh;
+  padding-right: 9.4vh;
+  font-size: 2.5vh;
+}
+.landingmessage2{
+  color: greenyellow;
+  padding-top: 4vh;
+  padding-left: 9.4vh;
+  padding-right: 9.4vh;
+  font-size: 2.5vh;
+}
+.ReturnButton {
+  font-size: 3vh;
+  margin-top: 10vh;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: green;
+  border: none;
+  padding: 1vh 2vh;
+  border-radius: .5vh;
+  background-color: #ffbe18;
+  font-weight: bolder;
+  transition: .5s;
+  cursor: pointer;
+  animation: AppearFromAbyss ease-in;
+  animation-duration: 3s;
+  animation-delay: -2s;
+  text-decoration: none;
+}
+
+.ReturnButton:hover {
+  transition: .5s;
+  background-color: darkgreen;
+  color: white;
+}
